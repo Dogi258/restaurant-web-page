@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("./images/pexels-engin-akyurt-2271106.jpg");
+  background-image: url("./images/burger-background.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -28,22 +28,101 @@ body {
   padding: 2rem;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  gap: 3rem;
+}
+
+.header h1 {
+  font-size: 3em;
+}
+
+.header .flex-container {
+  display: flex;
+  width: 25rem;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.header .flex-container button {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20% 20% 0 0;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+  position: relative;
+}
+
+.header .flex-container button:hover {
+  transform: scale(1.1);
+  top: -4px;
+}
+
+.header .flex-container button:active {
+  transform: scale(1);
+  top: 0px;
+}
+
 .main {
   padding: 2rem;
   display: flex;
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 20rem;
   background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5%;
 }
 
-.container {
+/* Home Page Styling */
+.home-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  min-width: 25vw;
   gap: 1rem;
 }
-.container img {
+.home-container img {
   border-radius: 50%;
   width: 15rem;
+}
+
+/* Menu Page Styling */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 70vw;
+  gap: 2rem;
+}
+
+.menu-container .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: black;
+  transition-duration: 300ms;
+  width: 15rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 20%;
+}
+
+.menu-container .menu-item img {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.menu-container .menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
