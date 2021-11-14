@@ -1,3 +1,4 @@
 import "./style.css";
+import initialPageLoad from "./initial-page-load.js";
 
-console.log("I am in index.js");
+initialPageLoad();
