@@ -126,3 +126,17 @@ body {
 .menu-container .menu-item:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Contact Page Styling */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-container img {
+  align-self: center;
+  max-width: 30rem;
+}

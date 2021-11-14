@@ -34,7 +34,7 @@ export default function createMenuPage() {
   );
 
   const ranchBurger = createMenuItem(
-    "RanchBurger",
+    "Ranch Burger",
     "Burger with ranch",
     ranchSrc
   );
